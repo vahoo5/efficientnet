@@ -60,7 +60,7 @@ def inject_tfkeras_modules(func):
 
 
 def init_keras_custom_objects():
-    import keras
+    from tensorflow import keras
     from . import model
 
     custom_objects = {
